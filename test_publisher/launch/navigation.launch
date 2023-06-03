@@ -1,0 +1,15 @@
+<launch>
+    <!-- (1) Define waypoints with numbers -->
+    <!-- <node pkg="rviz" type="rviz" name="rviz" args="-d /home/kimkt0408/rviz/test_publisher.rviz" /> -->
+
+    <!-- <group ns="move_base_seq">
+        <rosparam file="$(find test_publisher)/param/waypoints.yaml" />
+    </group> -->
+
+    <!-- <node pkg="test_publisher" type="navigation_final.py" name="navigation" output="screen" /> -->
+
+
+    <!-- (2) Define waypoints with the mouse -->
+    <node pkg="test_publisher" type="navigation_waypoint.py" name="navigation" output="screen" />
+
+</launch>
